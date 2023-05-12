@@ -24,7 +24,7 @@ import ca.uhn.fhir.rest.server.RestfulServer;
 import ca.uhn.fhir.rest.server.RestfulServerConfiguration;
 import org.apache.commons.lang3.Validate;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 public abstract class BaseServerCapabilityStatementProvider {
 

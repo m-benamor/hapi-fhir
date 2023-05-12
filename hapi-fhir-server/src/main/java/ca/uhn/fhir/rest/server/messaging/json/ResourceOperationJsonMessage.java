@@ -23,7 +23,7 @@ import ca.uhn.fhir.rest.server.messaging.ResourceOperationMessage;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-import javax.annotation.Nullable;
+import jakarta.annotation.Nullable;
 
 public class ResourceOperationJsonMessage extends BaseJsonMessage<ResourceOperationMessage> {
 

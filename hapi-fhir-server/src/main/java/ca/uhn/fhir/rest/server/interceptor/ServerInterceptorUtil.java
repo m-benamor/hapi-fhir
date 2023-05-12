@@ -29,7 +29,6 @@ import ca.uhn.fhir.rest.server.servlet.ServletRequestDetails;
 import ca.uhn.fhir.rest.server.util.CompositeInterceptorBroadcaster;
 import org.hl7.fhir.instance.model.api.IBaseResource;
 
-import javax.annotation.CheckReturnValue;
 import java.util.List;
 import java.util.Objects;
 
@@ -43,7 +42,6 @@ public class ServerInterceptorUtil {
 	 * Fires {@link Pointcut#STORAGE_PRESHOW_RESOURCES} interceptor hook, and potentially remove resources
 	 * from the resource list
 	 */
-	@CheckReturnValue
 	public static List<IBaseResource> fireStoragePreshowResource(List<IBaseResource> theResources, RequestDetails theRequest, IInterceptorBroadcaster theInterceptorBroadcaster) {
 		List<IBaseResource> retVal = theResources;
 		retVal.removeIf(Objects::isNull);

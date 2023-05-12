@@ -21,7 +21,7 @@ package ca.uhn.fhir.rest.api.server.bulk;
 
 import org.hl7.fhir.instance.model.api.IIdType;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.Date;
 import java.util.Set;
 
